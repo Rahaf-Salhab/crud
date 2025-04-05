@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="add-course">
+        <div class="container">
+            <h1>Crud System</h1>
+            <form action="">
+                <div class="mb-3">
+                    <label for="">Course Name</label>
+                    <input type="text" placeholder="course name" id="courseName" class="inputs form-control">
+                </div> 
+        
+                    <label for="">Course Category</label>
+                    <input type="text" placeholder="course category" id="courseCategory" class="inputs form-control">
+    
+                    <label for="">Course Price</label>
+                    <input type="number" placeholder="course price" id="coursePrice" class="inputs form-control">
+    
+                    <label for="">Course Description</label>
+                    <input type="text" placeholder="course description" id="courseDescription" class="inputs form-control">
+    
+                    <label for="">Course Capacity</label>
+                    <input type="number" placeholder="course capacity" id="courseCapacity" class="inputs form-control">
+                    <input type="submit" value="Add course" class="btn btn-outline-secondary mt-3" id="click">
+                    <button class="btn btn-outline-secondary mt-3" type="reset">Clear</button>
+            </form>
+        </div>
+        <div class="container">
+            <input type="search" placeholder="search ..." id="search" class="form-control my-3">
+            <table class="table table table-striped">
+                <thead>
+           <tr>  
+            <th>#</th>
+            <th>name</th>
+            <th>category</th>
+            <th>price</th>
+            <th>description</th>
+            <th>capacity</th>
+            <th>update</th>
+            <th>delete</th>
+           </tr>
+         </thead>
+         <button class="btn btn-outline-danger text-center my-3">delete all</button>
+         <tbody id="data">
+    
+         </tbody>
+            </table>
+        </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="./main.js"></script>
+  </body>
+</html>
